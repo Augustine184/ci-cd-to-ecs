@@ -50,10 +50,12 @@ ci-cd-to-ecs/
 - ECS Cluster: Hosts running containers
 - IAM Roles: Used for Jenkins EC2 and ECS tasks
 - Terraform: Used to provision EC2 instances
+  
 🐳 Dockerfile
 Multistage build:
 - Stage 1: Maven build of vprofile project
 - Stage 2: Deploy WAR into Tomcat base image
+  
 📁 Sample `.env` File for SonarQube
 POSTGRES_USER=sonar
 POSTGRES_PASSWORD=admin123
@@ -62,6 +64,7 @@ POSTGRES_DB=sonarqube
 SONAR_JDBC_URL=jdbc:postgresql://postgres/sonarqube
 SONAR_JDBC_USERNAME=sonar
 SONAR_JDBC_PASSWORD=admin123
+
 🧪 Ports Used
 Tool        | Port
 ------------|------
@@ -73,7 +76,6 @@ Install AWS CLI on Jenkins EC2:
 sudo snap install aws-cli --classic
 
 Configure AWS credentials in Jenkins for ECR and ECS integration
-📸 Architecture Diagram
  
 👤 Author
 Augustine E
